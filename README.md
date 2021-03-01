@@ -7,7 +7,7 @@ on a few select limiters.  To do this I created a javascript function that could
 from 8 to 128 characters, with preferences for uppercase, lowercase and numbers.  The javascript was divided between
 two parts, a function that generated the password prompts, and a few if statements for getting the passwords right.
 
-![Alt text](C:\Users\trb51\TB_Password_Generator\assets\images\Password_Screenshot.png)
+![Alt text](./assets/images/Password_Screenshot.png)
 
 Page Link: https://trb5160.github.io/TB_Password_Generator/
 Github Link: https://github.com/trb5160/TB_Password_Generator.git
