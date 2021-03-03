@@ -22,11 +22,11 @@ function generatePassword() {
   var result = [];
   var userinput = [];
 
-  var HowmanyCharc = prompt("How many Characters do you want in your password? Choose between 8 and 128.");
-  var numbers = confirm("Do you want numbers in your password?");
-  var uppercases = confirm("Do you want uppercase letters in your password?");
-  var lowercases = confirm("Do you want lowercase letters in your password?");
-  var characters = confirm("Do you want special characters in your password?");
+  var HowmanyCharc = prompt("Number of Characters (8-128");
+  var numbers = confirm("Include numbers?");
+  var uppercases = confirm("Include uppercase letters?");
+  var lowercases = confirm("Include lowercase letters?");
+  var characters = confirm("Include special characters?");
 
   // If statements for arrays
 
