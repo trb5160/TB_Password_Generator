@@ -22,14 +22,22 @@ function generatePassword() {
   var result = [];
   var userinput = [];
 
-  var HowmanyCharc = prompt("Number of Characters (8-128");
+  var HowmanyCharc = prompt("Number of Characters (8-128)");
   var numbers = confirm("Include numbers?");
   var uppercases = confirm("Include uppercase letters?");
   var lowercases = confirm("Include lowercase letters?");
   var characters = confirm("Include special characters?");
 
   // If statements for arrays
-
+  if (HowmanyCharc > 8 && HowmanyCharc <= 128) {
+    for (var i = 0; i < HowmanyCharc; i++) {
+      userinput.push(result[Math.floor(Math.random() * result.length)]);
+    }
+    return userinput.join("");
+  }
+  if (HowmanyCharc < 8 || HowmanyCharc > 128){
+    return ("Please select a number between 8-128")
+  }
   if (uppercases) {
     result = result.concat(uppercaseLetters);
 
@@ -50,13 +58,4 @@ function generatePassword() {
   }
   console.log(result)
 
-
-  //Math
-
-  for (var i = 0; i < HowmanyCharc; i++) {
-
-    userinput.push(result[Math.floor(Math.random() * result.length)]);
-  }
-
-  return userinput.join("");
 }
